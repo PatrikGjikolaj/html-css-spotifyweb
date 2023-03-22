@@ -5,25 +5,40 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+/********************************/
+/* Proprietà di tutta la pagina */
+/********************************/
+.whiteText {color: white;}
+.greyText {color: grey;}
+.font8 {font-size: clamp(0.5rem, 0.4167rem + 0.2778vw, 0.75rem);}
+.font12 {font-size: clamp(0.75rem, 0.6667rem + 0.2778vw, 1rem);}
+.font14 {font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);}
+.font22 {font-size: clamp(1.375rem, 1.2917rem + 0.2778vw, 1.625rem);}
+.centerText {text-align: center;}
+#block {display: block;}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
 /********************/
 /* Proprietà header */
 /********************/
 .premium {
     display: flex;
     flex-direction: row-reverse;
-    height: 20vh;
-    padding: 20px;
+    height: 50px;
+    padding: 5px;
     background-color: #000000aa;
 }
 .upBtn {
-    padding: 12px 35px;
+    padding: 5px 20px;
     border: 1px solid white;
     background-color: #00000000;
     color: white;
     border-radius: 20px;
-}
-.font10 {
-    font-size: 10px;
+    margin-block: auto;
 }
 /******************/
 /* Proprietà main */
@@ -31,7 +46,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: calc(100vh - 50px);
     width: 10vw;
     position: absolute;
     top: 0;
@@ -39,20 +54,35 @@
     background-color: #000000;
     justify-content: space-between;
 }
+.resize40 {
+    width: 40%;
+    margin: 0 auto;
+}
+.resize60 {
+    width: 60%;
+    margin: 0 auto;
+}
+#user{
+    background-color: grey;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
 .opac {
     opacity: 70%;
 }
 .music {
     width: 90vw;
-    height: 60vh;
+    height: calc(100vh - 100px);
     position: absolute;
-    top: 20vh;
+    top: 50px;
     left: 10vw;
     overflow-y: auto;
     padding: 10px;
 }
 .categories {
     justify-content: center;
+    gap: 10px;
 }
 .categories > a {
     text-decoration: none;
@@ -73,7 +103,6 @@
 }
 .creatoDoe {
     justify-content: space-between;
-    gap: 10px;
 }
 .creatoDoe > div {
     width: calc(80vw / 2);
@@ -94,7 +123,8 @@
 /********************/
 .footcontainer {
     width: 100%;
-    height: 20vh;
+    height: 50px;
+    padding: 5px;
     position: absolute;
     bottom: 0;
     background-color: #282828;
@@ -106,24 +136,26 @@
 .rightItems {
     display: flex;
     height: 100%;
-    padding: 15px 5px;
-    justify-content: center;
+}
+.leftItems {
+    width: 30%;
 }
 .centerItems {
     flex-direction: column; 
     align-items: center;
+    justify-content: center;
+    width: 40%;
 }
 .rightItems{
     align-items: center;
+    justify-content: end;
+    width: 30%;
 }
 .footPic {
-    width: 100%;
-    height: 100%;
-    display: block;
+    width: 40px;
+    margin-block: auto;
 }
-
-
-.bg1 {background-color: red}
+.bg1 {background-color: #141922}
 @media screen and (min-width: 481px) {
     .bg2 {
         background-color: aqua;
