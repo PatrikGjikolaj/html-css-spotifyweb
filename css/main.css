@@ -11,10 +11,11 @@
 .whiteText {color: white;}
 .greyText {color: grey;}
 .font8 {font-size: clamp(0.5rem, 0.4167rem + 0.2778vw, 0.75rem);}
+.font10 {font-size: clamp(0.625rem, 0.5417rem + 0.2778vw, 0.875rem);}
 .font12 {font-size: clamp(0.75rem, 0.6667rem + 0.2778vw, 1rem);}
 .font14 {font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);}
 .font22 {font-size: clamp(1.375rem, 1.2917rem + 0.2778vw, 1.625rem);}
-.font41 {font-size: 41px;}
+.font24 {font-size: clamp(1.5rem, 1.4167rem + 0.2778vw, 1.75rem);}
 .centerText {text-align: center;}
 #block {display: block;}
 .flex {
@@ -52,23 +53,35 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh - 50px);
+    max-height: calc(100vh - 70px);
     width: 10vw;
-    padding: 5px;
+    padding: 10px;
     background-color: #000000;
     justify-content: space-between;
     z-index: 2;
+}
+.upElements,
+.downElements {
+    display: flex;
+    flex-direction: column;
+}
+.resize10 {
+    width: 10%;
 }
 .resize20 {
     width: 15%;
 }
 .resize40 {
     width: 40%;
-    margin: 0 auto;
 }
 .resize60 {
     width: 60%;
-    margin: 0 auto;
+}
+.show{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .noShow {
     display: none;
@@ -78,6 +91,7 @@
 }
 .flexShow {
     display: flex;
+    align-items: center;
 }
 #user{
     background-color: grey;
@@ -90,7 +104,7 @@
 }
 .music {
     width: 90vw;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
     padding: 60px 10px 10px 10px;
 }
 .overflow {
@@ -133,7 +147,7 @@
 /********************/
 .footcontainer {
     width: 100%;
-    height: 50px;
+    height: 70px;
     padding: 5px;
     background-color: #282828;
     display: flex;
@@ -167,12 +181,19 @@
     display: block;
 }
 .bg1 {background-color: #141922}
+
+/***************/
+/* Media query */
+/***************/
 @media screen and (min-width: 481px) {
     .show {
         display: none;
     }
     .noShow {
-        display: unset;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .container{
         width: 30vw;
