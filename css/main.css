@@ -65,6 +65,9 @@
     display: flex;
     flex-direction: column;
 }
+.padTop15 {
+    padding-top: 15px;
+}
 .resize10 {
     width: 10%;
 }
@@ -205,7 +208,29 @@
     background-color: white;
 }
 .bg1 {background-color: #141922}
-
+/********************/
+/* Effetti speciali */
+/********************/
+.upElements > * :hover {
+    color: white;
+}
+.categories :hover {
+    color: white;
+}
+.hov {
+    position: relative;
+}
+#play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.hov :hover + #play {
+    display: initial;
+    filter: opacity(0.9) brightness(90%) contrast(90%);
+    background-color: #ffffffaa;
+}
 /***************/
 /* Media query */
 /***************/
@@ -221,10 +246,10 @@
     }
     .container{
         width: 30vw;
+        overflow: hidden;
     }
     .music {
         width: 70vw;
-
     }
     .recentlyPlayed > div {
         width: calc(70vw / 4 - 20px);
