@@ -180,6 +180,30 @@
     margin-block: auto;
     display: block;
 }
+.song {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.volume {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.volume > * {
+    margin-left: 10px;
+}
+.greyLine {
+    width: 80%;
+    height: 2px;
+    background-color: grey;
+}
+.whiteLine {
+    width: 30%;
+    height: 2px;
+    background-color: white;
+}
 .bg1 {background-color: #141922}
 
 /***************/
