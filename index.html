@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg1 bg2 bg3 bg4">
+<body class="bg1">
     <!-- Header della pagina -->
     <header>
         <div class="premium">
@@ -66,7 +66,7 @@
                                 <span>La tua libreria</span>
                             </div>
                         </div>
-                        <div>
+                        <div class="scroll">
                             <div class="whiteText padTop15">
                                 <h4>PLAYLIST</h4>
                             </div>
@@ -74,7 +74,10 @@
                                 <i class="fa-sharp fa-solid fa-square-plus font24"></i>
                                 <span class="font12">Crea Playlist</span>
                             </div>
-                            <div class="greyText opac overflow font10">
+                            <div class="greyText opac overflow font10 scroll">
+                                <span id="block" class="padTop15">Nome Playlist</span>
+                                <span id="block" class="padTop15">Nome Playlist</span>
+                                <span id="block" class="padTop15">Nome Playlist</span>
                                 <span id="block" class="padTop15">Nome Playlist</span>
                                 <span id="block" class="padTop15">Nome Playlist</span>
                                 <span id="block" class="padTop15">Nome Playlist</span>
@@ -85,8 +88,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="downElemnts">
-                        <div class="greyText opac">
+                    <div class="downElements">
+                        <div class="greyText opac sIcon">
                             <img src="./img/download.svg" alt="" class="resize20">
                             <span class="font8">Installa app</span>
                         </div>
@@ -102,12 +105,12 @@
             </div>
             <div class="music overflow">
                 <div class="categories font12">
-                    <a href="">IN EVIDENZA</a>
-                    <a href="">PODCAST</a>
-                    <a href="">CLASSIFICHE</a>
-                    <a href="">GENERI E MOOD</a>
-                    <a href="">NUOVE USCITE</a>
-                    <a href="">SCOPRI</a>
+                    <a href="">IN EVIDENZA <hr></a>
+                    <a href="">PODCAST <hr></a>
+                    <a href="">CLASSIFICHE <hr></a>
+                    <a href="">GENERI E MOOD <hr></a>
+                    <a href="">NUOVE USCITE <hr></a>
+                    <a href="">SCOPRI <hr></a>
                 </div>
                 <h2 class="whiteText font22">Recently played</h2>
                 <div class="recentlyPlayed centerText">
@@ -227,18 +230,18 @@
                 <div class="whiteText font8 song">
                     <span class="font12">0.25</span>
                     <div class="greyLine">
-                        <div class="whiteLine"></div>
+                        <div class="whiteLine"><i class="fa-solid fa-circle-dot" id="dotS"></i></div>
                     </div>
                     <span class="font12">4.35</span>
                 </div>
             </div>
-            <div class="rightItems">
+            <div class="rightItems volumeM">
                 <div class="whiteText font10 volume">
                     <i class="fa-solid fa-list-ul"></i>
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
                     <div class="greyLine">
-                        <div class="whiteLine"></div>
+                        <div class="whiteLine"><i class="fa-solid fa-circle-dot" id="dotV"></i></div>
                     </div>
                 </div>
 
