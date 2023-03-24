@@ -39,6 +39,7 @@
 }
 .upBtn {
     padding: 5px 20px;
+    margin-right: 25px;
     border: 1px solid white;
     background-color: #00000000;
     color: white;
@@ -239,6 +240,13 @@
     bottom: -100%;
     left: 100%;
 }
+#play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 25%;
+}
 .bg1 {background-color: #141922}
 /********************/
 /* Effetti speciali */
@@ -246,7 +254,7 @@
 .upElements > * :hover {
     color: white;
 }
-.categories :hover {
+.categories:hover {
     color: white;
 }
 .categories :hover hr {
@@ -256,14 +264,8 @@
 .hov {
     position: relative;
 }
-#play {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    padding: 25%;
-}
-.hov :hover + #play {
+
+.hov:hover + #play {
     display: initial;
     background-color: #ffffff33;
     filter: contrast(0) brightness(100);
@@ -276,6 +278,9 @@
 }
 .volumeM :hover #dotV {
     color: white;
+}
+.upBtn:hover {
+    transform: scale(1.25);
 }
 /***************/
 /* Media query */
