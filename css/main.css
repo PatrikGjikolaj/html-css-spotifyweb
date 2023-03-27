@@ -247,7 +247,10 @@
     display: none;
     padding: 25%;
 }
-.bg1 {background-color: #141922}
+.bg1 {
+    background-color: #141922;
+    contain: content;    
+}
 /********************/
 /* Effetti speciali */
 /********************/
