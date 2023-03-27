@@ -265,7 +265,7 @@
     position: relative;
 }
 
-.hov :hover + #play {
+.hov:hover #play {
     display: initial;
     background-color: #ffffff33;
     filter: contrast(0) brightness(100);
